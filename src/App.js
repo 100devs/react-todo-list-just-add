@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react'
+import Header from "./components/Header";
+import List from "./components/List"
+import AddTodo from "./components/AddTodo"
 
 function App() {
+
+  const [todos, setTodos] = useState([
+    {
+      id: 1,
+      item: "Drink Water",
+    },
+    {
+      id: 2,
+      item: "Make Healthy Dinner",
+    },
+    {
+      id: 3,
+      item: "Exercise",
+    },
+  ]);
+
+  const addTodo = (todo) => {
+    const id = Math.ceil(Math.random()*100000)
+    const newTodo = {id, ...todo}
+    setTodos([...todos, newTodo])
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Header title="Todo List" />
+      <AddTodo onAdd={addTodo} />
+      <List todos={todos}/>
     </div>
   );
 }
