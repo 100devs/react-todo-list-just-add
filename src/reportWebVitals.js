@@ -11,3 +11,4 @@ const reportWebVitals = onPerfEntry => {
 };
 
 export default reportWebVitals;
+//default file in the creat-react-app informs users about perf test results, and is made available throughout the app throught the export default
