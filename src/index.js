@@ -1,13 +1,16 @@
+//importing modules for use in this file, styles main App file and the reportWebVitals file
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+//renders the App component
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
+  //target the default root div where the app will be rendered into
   document.getElementById('root')
 );
 
