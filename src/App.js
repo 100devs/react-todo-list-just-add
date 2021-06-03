@@ -1,10 +1,16 @@
+//imports useState hook
 import { useState } from 'react'
+
+//imports components
 import Header from "./components/Header";
 import List from "./components/List"
 import AddTodo from "./components/AddTodo"
 
+
+//creating your App function
 function App() {
 
+  //sets useState
   const [todos, setTodos] = useState([
     {
       id: 1,
@@ -20,12 +26,13 @@ function App() {
     },
   ]);
 
+  //creates addTodo function
   const addTodo = (todo) => {
     const id = Math.ceil(Math.random()*100000)
-    const newTodo = {id, ...todo}
-    setTodos([...todos, newTodo])
+    const newTodo = {id, ...todo} //creates new todo
+    setTodos([...todos, newTodo]) //calls setTodos to add newTodo along with pervious todos
   }
-
+ //what App.js returns
   return (
     <div className="container">
       <Header title="Todo List" />
@@ -35,4 +42,5 @@ function App() {
   );
 }
 
+// exporting App.js
 export default App;

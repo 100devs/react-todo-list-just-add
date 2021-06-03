@@ -1,4 +1,4 @@
-
+//creating of Todo component
 const Todo = ({ todo }) => {
     return (
         <div>
@@ -6,6 +6,6 @@ const Todo = ({ todo }) => {
         </div>
     )
 }
-
+//exporting of Todo
 export default Todo
 
