@@ -1,3 +1,6 @@
+//It a set of useful metrics that aim to capture user experience on a web page
+
+
 const reportWebVitals = onPerfEntry => {
   if (onPerfEntry && onPerfEntry instanceof Function) {
     import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
