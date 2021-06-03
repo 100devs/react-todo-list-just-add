@@ -6,7 +6,7 @@ const List = ({ todos }) => {
         <div>
           {todos.map((todo) => 
             <Todo key={todo.id} todo={todo} />
-            // passed in 3 todos, looping through these todos, and creating 3 todos 
+            // passed in 3 todos, looping through these todos, and creating 3 todos. Creating a component for each one. 
           )}  
         </div>
     )
