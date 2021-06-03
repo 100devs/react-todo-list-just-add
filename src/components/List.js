@@ -1,5 +1,7 @@
+//importing Todo component
 import Todo from './Todo'
 
+//creation of List component, passing in todos
 const List = ({ todos }) => {
     return (
         <div>
@@ -10,5 +12,6 @@ const List = ({ todos }) => {
     )
 }
 
+//exporting List component
 export default List
 
