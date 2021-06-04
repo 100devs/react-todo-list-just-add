@@ -1,8 +1,13 @@
 import { useState } from 'react'
 
+
+
+{/*takes in form input */}
 const AddTodo = ({ onAdd }) => { 
     const [item, setItem] = useState('')
 
+
+{/* our event listener*/}
     const onSubmit = (e) => {
         e.preventDefault()
         onAdd({item})
@@ -10,6 +15,8 @@ const AddTodo = ({ onAdd }) => {
         setItem('')
     }
 
+
+{/*setting up our user input to be sent to app.js line 37 in order to create a new todo item */}
     return (
         <form onSubmit={onSubmit}>
             <label>Add Todo:</label>
@@ -23,5 +30,5 @@ const AddTodo = ({ onAdd }) => {
         </form>
     )
 }
-
+{/*exports to app.js */}
 export default AddTodo
