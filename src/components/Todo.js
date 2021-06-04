@@ -6,6 +6,7 @@ const Todo = ({ todo }) => {
         </div>
     )
 }
+{/* this makes todo components and tells App.js what to render when a todo is created*/}
 
 export default Todo
 
