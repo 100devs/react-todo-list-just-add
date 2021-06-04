@@ -1,14 +1,16 @@
-import Todo from './Todo'
+//imports the Todo component from the todo file
+import Todo from "./Todo";
 
+//creates a new component called list that takes the props
 const List = ({ todos }) => {
-    return (
-        <div>
-          {todos.map((todo) => 
-            <Todo key={todo.id} todo={todo} />
-          )}  
-        </div>
-    )
-}
+  //sets up the return block, everythign in the block will be
+  return (
+    <div>
+      {todos.map((todo) => (
+        <Todo key={todo.id} todo={todo} />
+      ))}
+    </div>
+  );
+};
 
-export default List
-
+export default List;
