@@ -32,7 +32,7 @@ function App() {
 
   return (
     <div className="container">
-      <Header title="Todo List" />
+      <Header title="Todo List Todo" />
        {/* header component to render out the header */}
       <AddTodo onAdd={addTodo} />
       {/* AddTodo component allows us to add new todos */}
