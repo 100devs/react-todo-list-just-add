@@ -1,11 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'; //brings in the react functionality to this file
+import ReactDOM from 'react-dom'; //brings in the react-dom functionality to this file so we can interact with dom
+import './index.css'; //importing the stylesheet to use with our interfase
+import App from './App'; //importing the file that defines the app component
+import reportWebVitals from './reportWebVitals'; //importing the file that defines the registerServiceworker component
 
-ReactDOM.render(
-  <React.StrictMode>
+ReactDOM.render( //??????render app and place it in the dom inside the element with the id of root.
+  <React.StrictMode> {/* ??????Shows warning about lifecycle methods */}
     <App />
   </React.StrictMode>,
   document.getElementById('root')
