@@ -5,7 +5,7 @@ import AddTodo from "./components/AddTodo" //importing the file that defines the
 
 function App() {
 
-  const [todos, setTodos] = useState([ //??????useState for using hooks, we are pulling the todos property and the setTodo function to use with our componet and passing an initial value object
+  const [todos, setTodos] = useState([ //??????useState for using hooks, we are declaring the todos property and the setTodo function to use with our component and passing an initial value as an object
     {
       id: 1,
       item: "Drink Water",
