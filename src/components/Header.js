@@ -1,4 +1,4 @@
-import React from "react"; //brings in the react functionality to this file
+import React from "react"; //brings in the React functionality to this file
 
 const Header = (props) => { //create header component function passing in the props object
   return ( //return the structure we created for the component

@@ -4,8 +4,7 @@ import List from "./components/List" //importing the file that defines the List 
 import AddTodo from "./components/AddTodo" //importing the file that defines the AddTodo component
 
 function App() {
-
-  const [todos, setTodos] = useState([ //??????useState for using hooks, we are declaring the todos property and the setTodo function to use with our component and passing an initial value as an object
+  const [todos, setTodos] = useState([ //we are declaring the todos property and the setTodo function to use with our component and passing an initial value which is an object of todo items
     {
       id: 1,
       item: "Drink Water",

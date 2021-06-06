@@ -1,11 +1,11 @@
 import Todo from './Todo' //import the Todo component 
 
-const List = ({ todos }) => { //create a constant variable that holds a function that pulls the todos object from the received props object
+const List = ({ todos }) => { //create a List component that pulls the todos object from the received props object
     return ( //return the app structure we created with the components we imported
         <div> {/** open a div */}
           {todos.map((todo) => 
             <Todo key={todo.id} todo={todo} />
-          )}  {/* anonymous function that maps the todo list going through each item and creating a Todo component passing it the id and item  */}
+          )}  {/* It uses map on the todos list passed to it, going through each item and creating a Todo component and passes the id and item to it */}
         </div> //closes div
     )
 }
