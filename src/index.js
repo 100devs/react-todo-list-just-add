@@ -1,14 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'; //import react
+import ReactDOM from 'react-dom'; //import ReactDOM
+import './index.css'; //import styling
+import App from './App'; //import App
+import reportWebVitals from './reportWebVitals'; //import reportWebVitals for measuring UX
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
+ReactDOM.render( //render the DOM
+  <React.StrictMode> //gives more detailed information on development
+    <App /> //App component
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root') //App component loads into div with 'root' name
 );
 
 // If you want to start measuring performance in your app, pass a function
