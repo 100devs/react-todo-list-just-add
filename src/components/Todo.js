@@ -1,4 +1,4 @@
-
+//grabs information from the item of todos.
 const Todo = ({ todo }) => {
     return (
         <div>
