@@ -6,6 +6,17 @@ This project was based on Traversy Media's [React JS Crash Course](https://youtu
 
 ## Available Scripts
 
+To correct error "0308010C:digital envelope routines::unsupported",
+
+The Correct (safe) Solution
+Use an up-to-date version of Node.js, and also use packages that are up-to-date with security fixes.
+
+For many people, the following command will fix the issue:
+
+### `npm audit fix --force`
+or
+### `yarn audit fix --force`
+
 In the project directory, you can run:
 
 ### `yarn start`
