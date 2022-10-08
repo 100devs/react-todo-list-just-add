@@ -32,7 +32,7 @@ function App() {
     const id = Math.ceil(Math.random() * 100000)
     //create a newTodo which has the id and whatever was passed in as todo
     const newTodo = { id, ...todo }
-    //this is the setTodo function which we use on line 8 - it returns an array containing all the todos plus the new one
+    //this is the setTodo function which we use on line 14 - it returns an array containing all the todos plus the new one
     setTodos([...todos, newTodo])
   }
 
@@ -40,8 +40,8 @@ function App() {
   return (
     <div className="container">
       <Header title="Todo List" /> {/*Header Component with title prop */}
-      <AddTodo onAdd={addTodo} /> {/* AddTodo Component with onAdd prop which is the func on line 23*/}
-      <List todos={todos} /> {/*List Component with todos prop which is our State variable from line 8 */}
+      <AddTodo onAdd={addTodo} /> {/* AddTodo Component with onAdd prop which is the func on line 30*/}
+      <List todos={todos} /> {/*List Component with todos prop which is our State variable from line 14 */}
     </div>
   );
 }

@@ -5,7 +5,6 @@ import { useState } from 'react'
 const AddTodo = ({ onAdd }) => {
     //create two state variables using destructuring for useState hook 
     const [item, setItem] = useState('')
-
     //Create handler function for our onSubmit event in the form element
     const onSubmit = (e) => {
         //prevents the default refresh 
@@ -23,7 +22,7 @@ const AddTodo = ({ onAdd }) => {
             <input /* the text input field */
                 type="text"
                 placeholder="Todo Item"
-                value={item} //the value from line 4
+                value={item} //the value from line 7
                 onChange={(e) => setItem(e.target.value)} //onChange of input field, item is set to whatever is in the fields
             />
             <input type="submit" value="Add Todo" /> {/* the form's submit button */}
